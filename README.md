@@ -32,7 +32,7 @@ server {
     error_log /var/log/catsanddogs_error.log;
 
     location / {
-        proxy_pass http://localhost:8000;
+        proxy_pass http://localhost:1234;
         proxy_redirect off;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
